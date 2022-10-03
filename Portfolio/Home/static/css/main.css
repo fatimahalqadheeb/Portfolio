@@ -1,0 +1,60 @@
+.upper-bar {
+    background-color: #ffffff;
+}
+
+.upper-bar span {
+    text-decoration: solid;
+    font-weight: bold;
+    color: #B392AC;
+    font-family: 'Harmattan', sans-serif;
+    font-size: 25px;
+}
+
+.upper-bar h2 {
+    font-size: 50px;
+    font-family: 'Harmattan', sans-serif;
+    color: #735D78;
+}
+
+.upper-bar .row .col-lg-9 {
+    padding-top: 20px;
+}
+
+.upper-bar img {
+    width: 95%;
+}
+
+.upper-bar .col-lg-3 {
+    text-align: right;
+}
+
+/* meduim screen*/
+@media screen and (min-width:700px) and (max-width:1100px) {
+    .upper-bar h2 {
+        font-size: 30px;
+    }
+
+    .upper-bar img {
+        width: 75%;
+    }
+}
+
+/* small screen*/
+@media screen and (max-width:576px) {
+    .upper-bar span {
+        display: none;
+    }
+
+    .upper-bar h2 {
+        display: none;
+    }
+
+    .upper-bar .col-lg-3 img {
+        width: 50%;
+
+    }
+
+    .upper-bar .col-lg-3 {
+        text-align: center !important;
+    }
+}
