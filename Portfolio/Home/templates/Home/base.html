@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- upper bar -->
+        <div class="upper-bar">
+            <div class="row pt-3 border-bottom">
+                <div class="col-sm-6 col-lg-3 text-start">
+                    <span>Web Developer</span>
+                    <h2>Fatimah Alqadheeb</h2>
+                </div>
+                <div class="col-sm-6 col-lg-9 ">
+                    <!-- header bar -->
+                    <header class="d-flex justify-content-center py-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="{% url 'Home:index' %}" class="nav-link active"
+                                    aria-current="page">Home</a></li>
+                            <li class="nav-item"><a href="{% url 'Home:about' %}" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                            <!-- <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Certificates</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li> -->
+                            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+                        </ul>
+                    </header>
+                    <!-- end header bar -->
+                    <!-- logo image -->
+                    <!-- <img src="{% static 'images/biglogo500x500.png'%}" class="img-responsive" alt="" /> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of upper bar -->
+    {% block content %}
+
+
+    <!-- start certificates-->
+    <div class="section pt-4" id="certificates">
+        <h3 class="h3">Certificates</h3>
+        <div class="row">
+            <div class="col-lg-4">Tuwaiq Academy</div>
+            <div class="col-lg-4">Misk Foundation</div>
+        </div>
+    </div>
+    <!-- end Certificates-->
+    <!-- start projects-->
+    <div class="section pt-4" id="projects">
+        <h3 class="h3">Projects</h3>
+        <div class="row">
+            <div class="col-lg-4">AYTB</div>
+            <div class="col-lg-4">Awtaralaqar</div>
+        </div>
+    </div>
+    <!-- end Projects-->
+    <!-- start Contacts-->
+    <div class="section" id="contacts">
+    </div>
+    <!-- end Contacts-->
+
+    {% endblock %}
+    <!-- start footer-->
+    <nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Welcome in</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end footer -->
+</body>
+<script type="text/javascript" src="/static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+</html>
