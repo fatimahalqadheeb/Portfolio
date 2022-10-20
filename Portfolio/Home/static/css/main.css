@@ -52,8 +52,8 @@
 
 .btn-primary {
     color: #000;
-    background-color: #FFCC8F;
-    border-color: #FFCC8F;
+    background-color: #FEC260;
+    border-color: #FEC260;
 }
 
 .btn-primary:hover {
@@ -98,12 +98,16 @@
 }
 
 a {
-    color: #735D78;
+    color: #905E96;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #905E96;
+    color: #EBC7E8;
+}
+
+.btn-group .date-color {
+    color: #FEC260 !important;
 }
 
 /* meduim screen*/

@@ -10,3 +10,7 @@ def index(request: HttpRequest):
 
 def about(request: HttpRequest):
     return render(request, 'Home/about.html')
+
+
+def projects(request: HttpRequest):
+    return render(request, 'Home/projects.html')
