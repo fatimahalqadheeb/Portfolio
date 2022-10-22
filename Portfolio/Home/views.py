@@ -14,3 +14,7 @@ def about(request: HttpRequest):
 
 def projects(request: HttpRequest):
     return render(request, 'Home/projects.html')
+
+
+def contact(request: HttpRequest):
+    return render(request, 'Home/contact.html')
