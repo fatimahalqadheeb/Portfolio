@@ -1,0 +1,147 @@
+.upper-bar {
+    background-color: #ffffff;
+}
+
+.upper-bar span {
+    text-decoration: solid;
+    font-weight: bold;
+    color: #B392AC;
+    font-family: 'Harmattan', sans-serif;
+    font-size: 25px;
+}
+
+.upper-bar h2 {
+    font-size: 35px;
+    font-family: 'Harmattan', sans-serif;
+    color: #735D78;
+}
+
+.upper-bar .row .col-lg-9 {
+    padding-top: 20px;
+}
+
+.upper-bar img {
+    width: 95%;
+}
+
+.upper-bar .col-lg-3 {
+    text-align: right;
+}
+
+.bg-dark {
+    background-color: #735D78 !important;
+}
+
+.nav-link {
+    color: #B392AC;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #735D78;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #735D78;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #FEC260;
+    border-color: #FEC260;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #FFD372;
+    border-color: #FFD372;
+}
+
+.btn-secondary {
+    color: #000;
+    background-color: #EBC7E8;
+    border-color: #EBC7E8;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #735D78;
+    border-color: #735D78;
+}
+
+.main-title {
+    color: #905E96;
+}
+
+.text-primary {
+    color: #735D78 !important;
+}
+
+.h3-title {
+    color: #B392AC;
+}
+
+.btn-outline-secondary {
+    color: #735D78;
+    border-color: #735D78;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #905E96;
+    border-color: #905E96;
+}
+
+a {
+    color: #905E96;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #EBC7E8;
+}
+
+.btn-group .date-color {
+    color: #FEC260 !important;
+}
+
+/* meduim screen*/
+@media screen and (min-width:700px) and (max-width:1100px) {
+    .upper-bar h2 {
+        font-size: 30px;
+    }
+
+    .upper-bar img {
+        width: 75%;
+    }
+}
+
+/* small screen*/
+@media screen and (max-width:576px) {
+    .upper-bar span {
+        display: none;
+    }
+
+    .upper-bar h2 {
+        margin-bottom: 0px;
+        /* display: none; */
+    }
+
+    .upper-bar .row .col-lg-9 {
+        padding-top: 0px;
+    }
+
+    .upper-bar .col-lg-3 img {
+        width: 50%;
+
+    }
+
+    .upper-bar .col-lg-3 {
+        text-align: center !important;
+    }
+}
